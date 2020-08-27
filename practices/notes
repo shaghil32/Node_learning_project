@@ -1,0 +1,25 @@
+// npm install package_name -save will automatically save the that dependency
+in package.json file under dependency section.
+so if someone else is running our code on there system then they can easily download 
+all those listed dependency using one single command
+$ npm install
+
+so package.json helps us in keep track of the dependency needed or used in our
+project
+
+we can create this json file when we create a new project an run this command
+$ npm init
+
+#nodemon
+
+it is package which keeps track of all the application file 
+such that if we make any changes to any of the app file it will automatically
+restart the server reflecting the changes. no need to stop and start again
+
+command to install is
+$ npm install -g nodemon
+-g tag tell us that it will be installed globally on our system not just for a specific 
+project, so might have to use sudo
+
+there is change now, instead of typing "node app.js" now we need to type 
+"nodemon app.js".

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    </head>
+    <body>
+        <!-- having problem in using partial template
+        -->
+        <%- include('partials/nav.ejs') %>
+        <h1>Welcome to the profile of <%=person%>  </h1>
+        <!-- here person is the param that we passed from express render method 
+           using an object with member person -->
+        <p><strong>Age: </strong>  <%=data.age%> </p>
+        <p><strong>Job: </strong>  <%=data.job%> </p>
+        <h2>Hobbies</h2>
+        <ul>
+            <% data.hobbies.forEach(function(item){ %>
+                <li><%= item %> </li>
+            <% }); %>
+        </ul>
+    </body>
+</html>
